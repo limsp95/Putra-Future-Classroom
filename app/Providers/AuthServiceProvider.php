@@ -28,5 +28,10 @@ class AuthServiceProvider extends ServiceProvider
 
         //
         Passport::routes();
+
+        Passport::tokensCan([
+    'read' => 'Read',
+    'write' => 'Write',
+]);
     }
 }
