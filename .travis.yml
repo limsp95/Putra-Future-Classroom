@@ -13,4 +13,12 @@ script:
   - php artisan key:generate
   - php artisan migrate --step
   - php ./vendor/bin/phpunit
+  
+  deploy:
+  provider: heroku
+  api_key:
+    secure: ac08f3c7-25f8-41bc-a800-8401733f99fc
+  app: bleblabluh3128
+  on:
+    repo:  limsp95/Putra-Future-Classroom
  
