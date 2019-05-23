@@ -15,8 +15,8 @@ pip install -r requirements.txt
 python test.py
 ```
 
-then go to http://<domain>:5000/departments
+then go to http://localhost:5000/departments
 
 you could drill down by deparments too!
 
-try http://<domain>:5000/dept/police
+try http://localhost:5000/dept/police
