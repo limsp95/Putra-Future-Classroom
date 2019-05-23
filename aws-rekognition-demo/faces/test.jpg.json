@@ -62,24 +62,24 @@
             "Confidence": 1.246976613998413
           },
           {
-            "Type": "ANGRY",
-            "Confidence": 1.111316442489624
+            "Type": "CALM",
+            "Confidence": 44.06401824951172
           },
           {
             "Type": "DISGUSTED",
             "Confidence": 4.623902320861816
           },
           {
+            "Type": "SURPRISED",
+            "Confidence": 3.845876455307007
+          },
+          {
             "Type": "HAPPY",
             "Confidence": 41.92676544189453
           },
           {
-            "Type": "CALM",
-            "Confidence": 44.06401824951172
-          },
-          {
-            "Type": "SURPRISED",
-            "Confidence": 3.845876455307007
+            "Type": "ANGRY",
+            "Confidence": 1.111316442489624
           },
           {
             "Type": "CONFUSED",

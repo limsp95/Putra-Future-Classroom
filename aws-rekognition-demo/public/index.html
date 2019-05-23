@@ -1,13 +1,41 @@
 <html>
 	<head>
+		<link rel="stylesheet" type="text/css" href ="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
 	</head>
 <body>
 
+
+<div class="container">
+	<h2>Choose a picture to upload :</h2>
 	<form action="/api/recognize" method="post" enctype="multipart/form-data">
-		<input type="file" accept="image/*;capture=camera" name="image" id="image">
+		<span class="control-fileupload">
+		<input type="file" accept="image/*;capture=camera" name="image" id="image" class="btn btn-info">
+	</span>
 		<br>
 		<br>
-		<input type="submit">
+		<input class="btn btn-primary" type="submit">
 	</form>
+</div>
+
+<div class="jumbotron jumbotron-fluid">
+  <div class="container">
+    <h1 class="display-4">Some intro</h1>
+    <p class="lead">DEMO using AWS Rekognition</p>
+    <p> How it works?</p>
+    <p class= "lead">Set the collections u want to upload</p>
+<div class="card-body">
+   <p> module.exports.collectionName = "YourCollectionName";<br/>
+    module.exports.region = "us-east-1";</p>
+</div>
+<p>Put some images in `faces`. Run node import.js to import them to AWS
+
+Then :
+
+    node index.js</p>
+
+<p>Upon hitting submit you should see the raw JSON result from AWS. If it successfuly matched the face, then you'll see that the <span class="badge badge-primary">ExternalImageId </span>matches the name of the original image that you indexed.</p>
+  </div>
+</div>
 </body>
 </html>
+

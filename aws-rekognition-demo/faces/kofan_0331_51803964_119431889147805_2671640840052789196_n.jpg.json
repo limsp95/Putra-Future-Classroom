@@ -62,28 +62,28 @@
             "Confidence": 0.6841052174568176
           },
           {
-            "Type": "SAD",
-            "Confidence": 0.2504098117351532
-          },
-          {
-            "Type": "HAPPY",
-            "Confidence": 95.79920196533203
+            "Type": "ANGRY",
+            "Confidence": 0.3353494107723236
           },
           {
             "Type": "CALM",
             "Confidence": 2.2913196086883545
           },
           {
-            "Type": "ANGRY",
-            "Confidence": 0.3353494107723236
-          },
-          {
-            "Type": "DISGUSTED",
-            "Confidence": 0.4948984980583191
+            "Type": "HAPPY",
+            "Confidence": 95.79920196533203
           },
           {
             "Type": "CONFUSED",
             "Confidence": 0.1447221338748932
+          },
+          {
+            "Type": "SAD",
+            "Confidence": 0.2504098117351532
+          },
+          {
+            "Type": "DISGUSTED",
+            "Confidence": 0.4948984980583191
           }
         ],
         "Landmarks": [
@@ -308,32 +308,32 @@
         },
         "Emotions": [
           {
-            "Type": "HAPPY",
-            "Confidence": 45.14262771606445
-          },
-          {
-            "Type": "CONFUSED",
-            "Confidence": 45.19898986816406
+            "Type": "DISGUSTED",
+            "Confidence": 45.19569396972656
           },
           {
             "Type": "SAD",
             "Confidence": 54.045467376708984
           },
           {
-            "Type": "CALM",
-            "Confidence": 45.21113586425781
-          },
-          {
             "Type": "SURPRISED",
             "Confidence": 45.086978912353516
           },
           {
-            "Type": "DISGUSTED",
-            "Confidence": 45.19569396972656
+            "Type": "CALM",
+            "Confidence": 45.21113586425781
+          },
+          {
+            "Type": "HAPPY",
+            "Confidence": 45.14262771606445
           },
           {
             "Type": "ANGRY",
             "Confidence": 45.11910629272461
+          },
+          {
+            "Type": "CONFUSED",
+            "Confidence": 45.19898986816406
           }
         ],
         "Landmarks": [
@@ -558,12 +558,24 @@
         },
         "Emotions": [
           {
-            "Type": "SAD",
-            "Confidence": 47.073448181152344
+            "Type": "SURPRISED",
+            "Confidence": 45.526268005371094
           },
           {
             "Type": "DISGUSTED",
             "Confidence": 45.919132232666016
+          },
+          {
+            "Type": "HAPPY",
+            "Confidence": 46.98476028442383
+          },
+          {
+            "Type": "SAD",
+            "Confidence": 47.073448181152344
+          },
+          {
+            "Type": "CONFUSED",
+            "Confidence": 45.26991271972656
           },
           {
             "Type": "CALM",
@@ -572,18 +584,6 @@
           {
             "Type": "ANGRY",
             "Confidence": 46.79340744018555
-          },
-          {
-            "Type": "SURPRISED",
-            "Confidence": 45.526268005371094
-          },
-          {
-            "Type": "CONFUSED",
-            "Confidence": 45.26991271972656
-          },
-          {
-            "Type": "HAPPY",
-            "Confidence": 46.98476028442383
           }
         ],
         "Landmarks": [
