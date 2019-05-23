@@ -15,7 +15,7 @@ dependencies (especially to install the AWS SDK for Node.js) can be installed wi
 
 Set the collections u want to upload
 
-    module.exports.collectionName = "YourCollectionName";
+    module.exports.collectionName = "ArcherFaces";
     module.exports.region = "us-east-1";
 
 ## Run
