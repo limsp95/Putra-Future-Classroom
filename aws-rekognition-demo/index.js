@@ -36,7 +36,7 @@ app.post('/api/recognize', upload.single("image"), function (req, res, next) {
 			{
 				res.send(data.FaceMatches[0].Face);	
 			} else {
-				res.send("Not recognized");
+				res.send("Not recognized, please try again.");
 			}
 		}
 	});
