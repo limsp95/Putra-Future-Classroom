@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html class="gr__docs_gravitee_io"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    
+<!-- Begin Jekyll SEO tag v2.1.0 -->
+<title>Publish your first API - API Gateway Platform Documentation</title>
+<meta property="og:title" content="Publish your first API">
+<meta name="description" content="Intended as a documentation theme based on Jekyll for technical writers documenting software and other technical products, this theme has all the elements you would need to handle multiple products with both multi-level sidebar navigation, tags, and other documentation features.">
+<meta property="og:description" content="Intended as a documentation theme based on Jekyll for technical writers documenting software and other technical products, this theme has all the elements you would need to handle multiple products with both multi-level sidebar navigation, tags, and other documentation features.">
+<link rel="canonical" href="https://docs.gravitee.io/apim_quickstart_publish.html">
+<meta property="og:url" content="https://docs.gravitee.io/apim_quickstart_publish.html">
+<meta property="og:site_name" content="Gravitee.io API Platform Documentation">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:site" content="@graviteeio">
+<script async="" src="Publish%20your%20first%20API%20-%20Gravitee.io%20API%20Platform%20Documentation_files/analytics.js"></script><script type="application/ld+json">
+{"@context": "http://schema.org",
+"@type": "WebPage",
+"headline": "Publish your first API",
+"description": "Intended as a documentation theme based on Jekyll for technical writers documenting software and other technical products, this theme has all the elements you would need to handle multiple products with both multi-level sidebar navigation, tags, and other documentation features.",
+"url": "https://docs.gravitee.io/apim_quickstart_publish.html"}</script>
+<!-- End Jekyll SEO tag -->
+
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="keywords" content=" ">
+<title>Publish your first API | API Gateway Platform Documentation</title>
+<style class="anchorjs"></style><link rel="stylesheet" href="Publish%20your%20first%20API%20-%20Gravitee.io%20API%20Platform%20Documentation_files/syntax.css">
+
+
+<link rel="stylesheet" type="text/css" href="Publish%20your%20first%20API%20-%20Gravitee.io%20API%20Platform%20Documentation_files/font-awesome.css">
+<!--<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">-->
+<link rel="stylesheet" href="Publish%20your%20first%20API%20-%20Gravitee.io%20API%20Platform%20Documentation_files/modern-business.css">
+<link rel="stylesheet" href="Publish%20your%20first%20API%20-%20Gravitee.io%20API%20Platform%20Documentation_files/lavish-bootstrap.css">
+<link rel="stylesheet" href="Publish%20your%20first%20API%20-%20Gravitee.io%20API%20Platform%20Documentation_files/pygments.css">
+<link rel="stylesheet" href="Publish%20your%20first%20API%20-%20Gravitee.io%20API%20Platform%20Documentation_files/customstyles.css">
+<link rel="stylesheet" href="Publish%20your%20first%20API%20-%20Gravitee.io%20API%20Platform%20Documentation_files/theme-bluegrey.css">
+<link rel="stylesheet" href="Publish%20your%20first%20API%20-%20Gravitee.io%20API%20Platform%20Documentation_files/gravitee.css">
+
+
+<script src="Publish%20your%20first%20API%20-%20Gravitee.io%20API%20Platform%20Documentation_files/jquery_003.js"></script>
+<script src="Publish%20your%20first%20API%20-%20Gravitee.io%20API%20Platform%20Documentation_files/jquery.js"></script>
+<script src="Publish%20your%20first%20API%20-%20Gravitee.io%20API%20Platform%20Documentation_files/jquery_002.js"></script>
+
+
+<script src="Publish%20your%20first%20API%20-%20Gravitee.io%20API%20Platform%20Documentation_files/bootstrap.js"></script>
+<script src="Publish%20your%20first%20API%20-%20Gravitee.io%20API%20Platform%20Documentation_files/anchor.js"></script>
+<script src="Publish%20your%20first%20API%20-%20Gravitee.io%20API%20Platform%20Documentation_files/toc.js"></script>
+<script src="Publish%20your%20first%20API%20-%20Gravitee.io%20API%20Platform%20Documentation_files/customscripts.js"></script>
+
+<link rel="shortcut icon" href="https://docs.gravitee.io/images/favicon.png">
+
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+<link rel="alternate" type="application/rss+xml" title="Gravitee.io API Platform Documentation" href="https://docs.gravitee.iofeed.xml/">
+<!-- Algolia search -->
+<link rel="stylesheet" href="Publish%20your%20first%20API%20-%20Gravitee.io%20API%20Platform%20Documentation_files/docsearch.css">
+
+    <script>
+        $(document).ready(function() {
+            // Initialize navgoco with default options
+            $("#mysidebar").navgoco({
+                caretHtml: '',
+                accordion: true,
+                openClass: 'active', // open
+                save: false, // leave false or nav highlighting doesn't work right
+                cookie: {
+                    name: 'navgoco',
+                    expires: false,
+                    path: '/'
+                },
+                slide: {
+                    duration: 400,
+                    easing: 'swing'
+                }
+            });
+
+            $("#collapseAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', false);
+            });
+
+            $("#expandAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', true);
+            });
+
+        });
+
+    </script>
+    <script>
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+    </script>
+    
+
+</head>
+<body data-gr-c-s-loaded="true">
+<!-- Navigation -->
+<nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container topnavlinks">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <img alt="API Gateway Platform" src="Publish%20your%20first%20API%20-%20Gravitee.io%20API%20Platform%20Documentation_files/upmlogo.png"><span class="projectTitle">API Gateway Platform</span>
+        </div>
+      
+        </div>
+        <!-- /.container -->
+</nav>
+
+<!-- Page Content -->
+<!-- this highlights the active parent class in the navgoco sidebar. this is critical so that the parent expands when you're viewing a page. This must appear below the sidebar code above. Otherwise, if placed inside customscripts.js, the script runs before the sidebar code runs and the class never gets inserted.-->
+<script>$("li.active").parents('li').toggleClass("active");</script>
+
+    <!-- Content Column -->
+    <div class="col-md-9">
+        <div class="post-header">
+   <h1 class="post-title-main">Publish your first API</h1>
+</div>
+
+
+
+<div class="post-content">
+
+   
+
+    
+    
+<!-- this handles the automatic toc. use ## for subheads to auto-generate the on-page minitoc. if you use html tags, you must supply an ID for the heading element in order for it to appear in the minitoc. -->
+<script>
+$( document ).ready(function() {
+  // Handler for .ready() called.
+
+$('#toc').toc({ minimumHeaders: 0, listType: 'ul', showSpeed: 0, headers: 'h2,h3,h4' });
+
+/* this offset helps account for the space taken up by the floating toolbar. */
+$('#toc').on('click', 'a', function() {
+  var target = $(this.getAttribute('href'))
+    , scroll_target = target.offset().top
+
+  $(window).scrollTop(scroll_target - 10);
+  return false
+})
+  
+});
+</script>
+
+<div id="toc"> <ul><li><a href="#create_your_api">Create your API</a><a class="anchorjs-link " href="#create_your_api" aria-label="Anchor link for: create_your_api" data-anchorjs-icon="" style="font-family: anchorjs-icons; font-style: normal; font-variant: normal; font-weight: normal; line-height: 1; padding-left: 0.375em;"></a></li><li><a href="#create_your_api_plan">Create your API Plan</a><a class="anchorjs-link " href="#create_your_api_plan" aria-label="Anchor link for: create_your_api_plan" data-anchorjs-icon="" style="font-family: anchorjs-icons; font-style: normal; font-variant: normal; font-weight: normal; line-height: 1; padding-left: 0.375em;"></a></li><li><a href="#deploy_your_api">Deploy your API</a><a class="anchorjs-link " href="#deploy_your_api" aria-label="Anchor link for: deploy_your_api" data-anchorjs-icon="" style="font-family: anchorjs-icons; font-style: normal; font-variant: normal; font-weight: normal; line-height: 1; padding-left: 0.375em;"></a></li><li><a href="#start_your_api">Start your API</a><a class="anchorjs-link " href="#start_your_api" aria-label="Anchor link for: start_your_api" data-anchorjs-icon="" style="font-family: anchorjs-icons; font-style: normal; font-variant: normal; font-weight: normal; line-height: 1; padding-left: 0.375em;"></a></li></ul></div>
+
+    
+
+
+    
+
+  <div id="preamble">
+<div class="sectionbody">
+<div class="paragraph">
+<p>This guide walks you through the process of creating your first API by using the Web UI Portal.
+API Gateway Portal UI can be accessed using the following URL:</p>
+</div>
+<div class="paragraph">
+<p><a href="http://imsyafiq.xyz:8000/" class="bare">http://imsyafiq.xyz:8000</a></p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tbody><tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+<strong>Chicago Employee Salary API</strong> : In this tutorial we will use the <a href="http://adt.imsyafiq.xyz:5000/departments">Chicago Employee Salary API</a> to set up our first proxy API. Chicago Employee Salary API returns JSON-formatted data via the following URL : <a href="http://adt.imsyafiq.xyz:5000/departments" class="bare">http://adt.imsyafiq.xyz:5000/departments</a>
+</td>
+</tr>
+</tbody></table>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="create_your_api" class="clickable-header top-level-header">Create your API<a class="anchorjs-link " href="#create_your_api" aria-label="Anchor link for: create_your_api" data-anchorjs-icon="" style="font-family: anchorjs-icons; font-style: normal; font-variant: normal; font-weight: normal; line-height: 1; padding-left: 0.375em;"></a></h2><i class="icon-arrow-up back-to-top"> </i>
+<div class="sectionbody">
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Login to <a href="http://imsyafiq.xyz:8000/" class="bare">http://imysyafiq.xyz:8000</a>.</p>
+</li>
+<li>
+<p>Open the user menu (top right) and click <code>Administration</code>.</p>
+</li>
+<li>
+<p>Click <code>(+)</code>. Create an API from scratch, Click<code>(->)</code></p>
+</li>
+</ol>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="Publish%20your%20first%20API%20-%20Gravitee.io%20API%20Platform%20Documentation_files/createapifromscratch.png" alt="graviteeio create api">
+</div>
+</div>
+<div class="olist loweralpha">
+<ol class="loweralpha" type="a">
+<li>
+<p>Give your API a name, a version, a description and a context path. Click <code>Next</code></p>
+</li>
+</ol>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="Publish%20your%20first%20API%20-%20Gravitee.io%20API%20Platform%20Documentation_files/apidetails.png" alt="graviteeio create first api 1">
+</div>
+</div>
+<div class="olist loweralpha">
+<ol class="loweralpha" start="2" type="a">
+<li>
+<p>Make sure that <code>Backend</code> is set to <code><a href="http://adt.imsyafiq.xyz:5000" class="bare">http://adt.imsyafiq.xyz:5000</a></code>. Click <code>Next</code>.</p>
+</li>
+</ol>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="Publish%20your%20first%20API%20-%20Gravitee.io%20API%20Platform%20Documentation_files/apiendpoint.png" alt="graviteeio create first api 2">
+</div>
+</div>
+<div class="olist loweralpha">
+<ol class="loweralpha" start="3" type="a">
+<li>
+<p>Give your Plan a <code>name</code>, set Security Type as <code>API key</code>, a <code>description</code> and enable <code>Auto Validate Subscription</code>. Click <code>Next</code>.</p>
+</li>
+</ol>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="Publish%20your%20first%20API%20-%20Gravitee.io%20API%20Platform%20Documentation_files/Plan.png" alt="graviteeio first api"></div>
+</div>
+<div class="olist loweralpha">
+<ol class="loweralpha" start="4" type="a">
+<li>
+<p>At<code>Doc</code>.Click <code>Skip</code>.</p>
+</li>
+</ol>
+</div>
+<div class="olist loweralpha">
+<ol class="loweralpha" start="5" type="a">
+<li>
+<p>At <code>Deployment</code>, Click <code>Create and start the API</code></p>
+</li>
+</ol>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="Publish%20your%20first%20API%20-%20Gravitee.io%20API%20Platform%20Documentation_files/deploy.png" alt="graviteeio first api"></div>
+	
+
+</div>
+<div class="paragraph">
+<p>Your API is now ready to be use by your consumers. Let’s see how to do this : <a href="https://docs.gravitee.io/apim_quickstart_consume.html">Use your first API</a></p>
+</div>
+<div class="paragraph">
+<p>This quick start was just an overview to create your first API. To go
+ further into API management detail you can take a look at the <a href="https://docs.gravitee.io/apim_publisherguide_manage_apis.html">User Guide</a></p>
+</div>
+</div>
+</div>
+
+    <div class="tags">
+        
+    </div>
+
+    
+
+</div>
+
+<hr class="shaded">
+
+<footer>
+    <div class="row">
+        <div class="col-lg-12 footer">
+            ©2019 GraviteeSource. All rights reserved. <br>
+            Gravitee.io APIM is distributed under <a href="http://www.apache.org/licenses/LICENSE-2.0.html">Apache License V2</a><br>
+             Site last generated: May 21, 2019
+        </div>
+    </div>
+</footer>
+
+<!-- Algolia search -->
+<script type="text/javascript" src="Publish%20your%20first%20API%20-%20Gravitee.io%20API%20Platform%20Documentation_files/docsearch.js"></script>
+<script type="text/javascript"> docsearch({
+  apiKey: 'b1c2f572a3911c288af513bd3e7d87f4',
+  indexName: 'gravitee',
+  inputSelector: '#search-input',
+  debug: false // Set debug to true if you want to inspect the dropdown
+});
+</script>
+
+
+    </div>
+    <!-- /.row -->
+</div>
+<!-- /.container -->
+    </div>
+
+
+
+
+
+
+
+<script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','//www.google-analytics.com/analytics.js','ga');ga('create','UA-67690250-1','auto');ga('require','displayfeatures');ga('send','pageview');</script>
+
+
+</body><!-- the google_analytics_id gets auto inserted from the config file --></html>
