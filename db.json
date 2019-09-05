@@ -10,7 +10,7 @@
       "id": 2,
       "Name": "Property 2",
       "Price": 800000,
-      "type": 4,
+      "type": 1,
       "address": "hafksgfklahekl"
     },
     {
@@ -32,41 +32,6 @@
       "Name": "Property 5",
       "Price": 500000,
       "type": 1,
-      "address": "hafksgfklahekl"
-    },
-    {
-      "id": 6,
-      "Name": "Property 6",
-      "Price": 210000,
-      "type": 3,
-      "address": "hafksgfklahekl"
-    },
-    {
-      "id": 7,
-      "Name": "Property 7",
-      "Price": 700000,
-      "type": 4,
-      "address": "hafksgfklahekl"
-    },
-    {
-      "id": 8,
-      "Name": "Property 8",
-      "Price": 500000,
-      "type": 3,
-      "address": "hafksgfklahekl"
-    },
-    {
-      "id": 9,
-      "Name": "Property 9",
-      "Price": 200000,
-      "type": 3,
-      "address": "hafksgfklahekl"
-    },
-    {
-      "id": 10,
-      "Name": "Property 10",
-      "Price": 320000,
-      "type": 2,
       "address": "hafksgfklahekl"
     }
   ]
