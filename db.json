@@ -3,35 +3,30 @@
       "id": 1,
       "Name": "Property 1",
       "Price": 200000,
-      "type": 1,
-      "address": "hafksgfklahekl"
+      "type": 1
     },
     {
       "id": 2,
       "Name": "Property 2",
       "Price": 800000,
-      "type": 1,
-      "address": "hafksgfklahekl"
+      "type": 1
     },
     {
       "id": 3,
       "Name": "Property 3",
       "Price": 510000,
-      "type": 2,
-      "address": "hafksgfklahekl"
+      "type": 2
     },
     {
       "id": 4,
       "Name": "Property 4",
       "Price": 380000,
-      "type": 2,
-      "address": "hafksgfklahekl"
+      "type": 2
     },
     {
       "id": 5,
       "Name": "Property 5",
       "Price": 500000,
-      "type": 1,
-      "address": "hafksgfklahekl"
+      "type": 1
     }
   ]
